@@ -15,15 +15,15 @@ public class StatsService {
 
     public int monthMaximumSale(long[] sales) {
         int monthMaximum = 0;
+
         int q;
         for (q = 0; q < sales.length; q++) {
+            if (sales[q] >= sales[monthMaximum]) {
+                monthMaximum = q;
+            }
         }
-        if (sales[q] >= sales[monthMaximum]) {
-            monthMaximum = q;
-        }
-
-        return monthMaximum + 1;
-    }
+            return monthMaximum + 1;
+            }
 
     public int monthMinimumSale(long[] sales) {
         int monthMinimum = 0;

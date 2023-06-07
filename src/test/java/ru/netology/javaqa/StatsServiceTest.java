@@ -27,17 +27,17 @@ class StaticServiceTest {
     }
 
     @Test
-    public void testAmaximumSale() {
+    public void testMaximumSale() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.monthMaximumSale(sales);
-        long expected = 6;
+        long expected = 8;
 
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    public void testAminimumSale() {
+    public void testMinimumSale() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.monthMinimumSale(sales);
