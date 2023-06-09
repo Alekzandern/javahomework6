@@ -22,8 +22,8 @@ public class StatsService {
                 monthMaximum = q;
             }
         }
-            return monthMaximum + 1;
-            }
+        return monthMaximum + 1;
+    }
 
     public int monthMinimumSale(long[] sales) {
         int monthMinimum = 0;
@@ -47,7 +47,7 @@ public class StatsService {
         return counter;
     }
 
-         public int salesAboveAverage(long[] sales) {
+    public int salesAboveAverage(long[] sales) {
         int counter = 0;
         for (long sale : sales) {
             if (sale < average(sales)) {
